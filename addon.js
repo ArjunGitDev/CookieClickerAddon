@@ -1,3 +1,9 @@
+document.onkeypress = function (e) {
+    if e.key == "/"{
+      alert("/ pressed")
+    }
+};
+
 var Addon = setInterval(function(){ 
   for (var h in Game.shimmers){
     if(Game.shimmers[h].type=="golden"){
