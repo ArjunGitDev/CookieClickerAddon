@@ -1,16 +1,6 @@
+setInterval(function() { Game.shimmers.forEach(function(shimmer) { shimmer.pop() }) }, 500);
+Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+function tapNews() { if (Game.TickerEffect && Game.TickerEffect.type == 'fortune') { Game.tickerL.click(); } }
 
-
-var Addon = setInterval(function(){ 
-    document.onkeypress = function (e) {
-    if e.key == "/"{
-      alert("/ pressed")
-    }
-};
-  for (var h in Game.shimmers){
-    if(Game.shimmers[h].type=="golden"){
-      Game.shimmers[h].pop();}}for (var h in Game.shimmers){if(Game.shimmers[h].type=="wrath"){
-        Game.shimmers[h].pop();}} 
-  try{
-    document.getElementById('bigCookie').click();
-  } catch (err) { clearInterval(); } }, 100
-);                      
+setInterval(function () { tapNews(); }, 3000);
+clearInterval(checkReady);
